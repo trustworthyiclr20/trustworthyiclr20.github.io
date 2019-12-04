@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ICLR 2020 Workshop on Towards Trustworthy ML: Rethinking Security and Privacy for ML">
+
+  <title>ICLR 2020 Workshop on Towards Trustworthy ML: Rethinking Security and Privacy for ML</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Begin page content -->
+<main role="main" class="container">
+  <h1 class="mt-5">Towards Trustworthy ML:<br /> <i>Rethinking Security and Privacy for ML</i></h1>
+  <h2>ICLR 2020 Workshop</h2>
+  <p class="mb-0"><b>Date:</b> April 26, 2020 (Sunday)</p>
+  <p class="mb-0"><b>Location:</b> Millennium Hall, Addis Ababa, Ethiopia (co-located with <a href="https://iclr.cc/" target="_blank">ICLR 2020</a>)</p>
+  <p class="mb-0"><b>Contact:</b> trustworthyiclr20@googlegroups.com (this will email all organizers)</p>
+  <p><b>Room:</b> TBD</p>
+  <p>
+    <i>Abstract</i>—As ML systems are pervasively deployed, security and privacy challenges became central to their design. The community produced a vast amount of work to address these challenges and increase trust in ML. Yet, much of it concentrates on well-defined problems that enable nice tractability from a mathematical perspective but are hard to translate to the threats that target real-world systems.
+  </p>
+  <p>
+    This workshop calls for novel research that addresses the security and privacy risks arising from the deployment of ML, from malicious exploitation of vulnerabilities (e.g., adversarial examples or data poisoning) to concerns on fair, ethical and privacy-preserving uses of data. We aim to provide a home to new ideas “outside the box”, even if proposed preliminary solutions do not match the performance guarantees of known techniques. We believe that such ideas could prove invaluable to more effectively spur new lines of research that make ML more trustworthy.
+  </p>
+    <p>
+    We aim to bring together experts from a variety of communities (ML, computer security, data privacy, fairness & ethics) in an effort to synthesize promising ideas and research directions, as well as foster and strengthen cross-community collaborations. Indeed, many fundamental problems studied in these diverse areas can be broadly recast as questions around the (in-)stability of ML models: generalization in ML, model memorization in privacy, adversarial examples in security, model bias in fairness and ethics, etc. Problems that we hope to encourage progress on are:
+  </p>
+    <p>
+    <b>(#1) Adversarial robustness beyond Lp balls.</b> Recent years have seen a tremendous amount of research devoted to making ML models robust to small test-time perturbations sampled adversarially from an Lp-ball. While seemingly simple, this has proven a difficult challenge that remains mostly unsolved today. Yet, even if robustness in an Lp ball were to be achieved, complete model robustness would still be far from guaranteed. We encourage researchers to move beyond this “toy” problem to characterize the robustness of real-world systems for which adversarial examples pose a threat (e.g., malware detection, visual ad-blocking, voice assistants, etc...). We hope that specificities of these systems and of their deployments may point towards alternative—and more easily attainable—avenues towards secure inference. 
+  </p>
+    <p>
+    <b>(#2) Stateful robustness.</b> Current adversarial example research focuses on securing a classifier for all possible use cases. This has proven to be extremely difficult and to date few solutions come close. However, when deployed, ML classifiers are not stateless systems that must respond to arbitrary inputs. Can we make use of additional knowledge (e.g., by making the classifier stateful, or by tailoring the defense to be deployed in one setting) which improves our ability to design defenses? Further, it might also be useful to think about ways to ensure graceful degradation of classifier performance in critical applications. For instance, instead of aiming to obtain robust classifiers that always accurately predict, it might be sufficient to get models that can fail gracefully (e.g., say “don’t know” or “the class is either cat or dog”).
+  </p>
+    <p>
+    <b>(#3) ML techniques tailored for privacy.</b> Current approaches in the literature “tailor” privacy solutions to ML. Whether based on cryptography (e.g., homomorphic encryption) or statistical tools (e.g., differential privacy), they often aim to add privacy to existing ML techniques. We believe that the orthogonal approach, of designing new ML models or algorithms that are better suited for privacy-preserving techniques, is heavily underrepresented. We hope to encourage preliminary explorations in this space, even if they currently fail to reach state-of-the-art results.
+  </p>
+    <p>
+    <b>(#4) Incentives in ML fairness and ethics.</b> Current approaches to ML fairness and ethics assume that the ML model owner is willing to collaborate and implement proposed solutions. However, the owner does not always have the incentives, the knowledge, or the means, to implement these solutions. We encourage the community to think about solutions that consider the model owner as adversarial and attempt to increase fairness “from the outside” of the model, e.g., modifying its inputs during training or inference. As part of this reflection, we hope submissions to the workshop will challenge existing definitions of ethics in machine learning.
+  </p>
+    <p>
+    <b>(#5) Friendly uses of adversarial ML.</b> Adversarial ML is usually considered negative. This stems from the assumption that model owners are honest and ethical. However, ML is deployed in many real-world scenarios with questionable motives (e.g., privacy-invasive applications, social sorting). In such scenarios, adversarial machine learning may become a golden standard to protect users and communities. We welcome applications of adversarial techniques used to build solutions that help combating unethical machine learning applications.
+  </p>
+
+    
+  </p>
+  <h2>Sponsor</h2>
+  <p>Thank you to the Open Philanthropy Project for sponsoring this event. Their grant will fund a best paper award as well as support for travel.</p>
+
+  
+  <h2>Schedule</h2>
+  TBA
+      <!--
+  <p>The following is a tentative schedule and is subject to change prior to the workshop.</p>
+
+  <table class="table table-sm">
+    <tbody>
+    <tr>
+      <th scope="row">8:45am</th>
+      <td>Opening Remarks</td>
+      <td>Organizers</td>
+    </tr>
+
+    <tr><th scope="row" colspan="3">Session 1: Provable methods for secure ML</th></tr>
+    <tr>
+      <th scope="row">9:00am</th>
+      <td>Contributed Talk #1: Sever: A Robust Meta-Algorithm for Stochastic Optimization [<a href="https://youtu.be/zbhQijVlGxg" target="_blank">video</a>]</td>
+      <td>Jerry Li</td>
+    </tr>
+    <tr>
+      <th scope="row">9:15am</th>
+      <td>Invited Talk #1: Semidefinite relaxations for certifying robustness to adversarial examples [<a href="https://secml2018.github.io/neurips_aditi_secml.pdf">slides</a>,  <a href="https://youtu.be/cU_j7Gu1Sv4" target="_blank">video</a>]</td>
+      <td><a href="https://stanford.edu/~aditir/" target="_blank">Aditi Raghunathan</a></td>
+    </tr>
+    <tr>
+      <th scope="row">9:45am</th>
+      <td>Contributed Talk #2: On the Effectiveness of Interval Bound Propagation for Training Verifiably Robust Models  [<a href="https://youtu.be/brteBkfxSrY" target="_blank">video</a>]</td>
+      <td>Sven Gowal</td>
+    </tr>
+    <tr><th scope="row" colspan="3">Poster session 1</th></tr>
+    <tr>
+      <th scope="row">10:00am</th>
+      <td>Poster Session followed by coffee break</td>
+      <td></td>
+    </tr>
+
+    <tr><th scope="row" colspan="3">Session 2: ML security and society</th></tr>
+    <tr>
+      <th scope="row">11:00am</th>
+      <td>Keynote: A Sociotechnical Approach to Security in Machine Learning [<a href="https://youtu.be/IJanaM6L9X4" target="_blank">video</a>]</td>
+      <td><a href="http://www.danah.org/" target="_blank">danah boyd</a></td>
+    </tr>
+    <tr>
+      <th scope="row">11:45am</th>
+      <td>Contributed Talk #3: Law and Adversarial Machine Learning [<a href="https://youtu.be/e8K8C8OYbd4" target="_blank">video</a>]</td>
+      <td>Salome Viljoen</td>
+    </tr>
+
+    <tr><th scope="row" colspan="3">Lunch break</th></tr>
+
+    <tr><th scope="row" colspan="3">Session 3: Attacks and interpretability</th></tr>
+    <tr>
+      <th scope="row">1:30pm</th>
+      <td>Invited Talk #2: Interpretability for when NOT to use machine learning [<a href="https://youtu.be/t1rJ9gIrYKM" target="_blank">video</a>]</td>
+      <td><a href="https://beenkim.github.io/" target="_blank">Been Kim</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2:00pm</th>
+      <td>Contributed Talk #5: Rigorous Agent Evaluation: An Adversarial Approach to Uncover Catastrophic Failures [<a href="https://youtu.be/tRhPifkTDks" target="_blank">video</a>]</td>
+      <td>Csaba Szepesvari</td>
+    </tr>
+    <tr>
+      <th scope="row">2:15pm</th>
+      <td>Invited Talk #3: Semantic Adversarial Examples [<a href="https://youtu.be/_k2PBVZYLjE" target="_blank">video</a>]</td>
+      <td><a href="http://pages.cs.wisc.edu/~jha/" target="_blank">Somesh Jha</a></td>
+    </tr>
+    <tr><th scope="row" colspan="3">Poster session 2</th></tr>
+    <tr>
+      <th scope="row">2:45pm</th>
+      <td>Poster Session followed by coffee break</td>
+      <td></td>
+    </tr>
+    <tr><th scope="row" colspan="3">Session 4: ML security from a formal verification perspective</th></tr>
+    <tr>
+      <th scope="row">4:15pm</th>
+      <td>Invited Talk #4: Safety verification for neural networks with provable guarantees [<a href="https://secml2018.github.io/marta-secml2018.pdf">slides</a>,  <a href="https://youtu.be/zbEirBgqbw4" target="_blank">video</a>]</td>
+      <td><a href="http://www.cs.ox.ac.uk/marta.kwiatkowska/" target="_blank">Marta Kwiatkowska</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4:45pm</th>
+      <td>Contributed Talk #4: Model Poisoning Attacks in Federated Learning [<a href="https://youtu.be/5wt2LpzRau0" target="_blank">video</a>]</td>
+      <td>Arjun Nitin Bhagoji</td>
+    </tr>
+    </tbody>
+  </table>
+	-->
+
+<!--
+	<h2>Accepted papers</h2>
+
+<ul>
+<li><strong>
+TITLE <span class="badge badge-success">morning</span>
+</strong> AUTHORS [<a href="LINK">paper</a>]</li>
+</ul>
+-->
+
+
+  <h2>Organizing Committee</h2>
+  <div class="row justify-content-around">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-2">
+      <img class="rounded-circle" src="nicolas.jpg" height="100px">
+      <p>Nicolas Papernot<br /> [Chair]<br /> University of Toronto and Vector Institute</p>
+    </div>
+    <div class="col-lg-2">
+      <img class="rounded-circle" src="florian.png" height="100px">
+      <p>Florian Tramer<br /> [Co-chair]<br /> Stanford University</p>
+    </div>
+    <div class="col-lg-2">
+      <img class="rounded-circle" src="carmela.jpg" height="100px">
+      <p>Carmela Troncoso<br /> EPFL</p>
+    </div>
+    <div class="col-lg-2">
+      <img class="rounded-circle" src="nicholas.jpg" height="100px">
+      <p>Nicholas Carlini<br /> Google Brain</p>
+    </div>
+    <div class="col-lg-2">
+      <img class="rounded-circle" src="shibani.jpg" height="100px">
+      <p>Shibani Santurka<br /> MIT</p>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+	
+	
+
+
+
+<h2>Call For Papers</h2>
+
+TBA
+
+<!--
+  <p class="mb-0"><b>Submission deadline:</b> October 26, 2018 Anywhere on Earth (AoE)</p>
+  <p class="mb-0"><b>Notification sent to authors:</b> November 12, 2018 Anywhere on Earth (AoE)</p>
+  <p class="mb-0"><b>Submission server:</b> <a href="https://cmt3.research.microsoft.com/SECML2018" target="_blank">https://cmt3.research.microsoft.com/SECML2018</a></p>
+	
+  <p>The workshop will include contributed papers. Based on the PC’s recommendation, each paper accepted to the workshop will be allocated either a contributed talk or poster presentation.</p>
+  <p>Submissions will introduce novel ideas or results. Submissions should follow the ICLR format and not exceed 4 pages (excluding references, appendices or large figures).</p>
+  <p>We invite submissions on <b>any aspect of machine learning that relates to computer security (and vice versa)</b>. This includes, but is not limited to:</p>
+  <ul>
+	  <li>TBD</li>
+  </ul>
+  <p><bWhen relevant, submissions are encouraged to clearly state their <b>threat model</b>, release <b>open-source code</b> and take particular care in conducting <b>ethical research</b>. Reviewing will be performed in a <b>single-blind</b> fashion (reviewers will be anonymous but not authors). Reviewing criteria include (a) <b>relevance</b>, (b) <b>quality</b> of the methodology and experiments, (c) <b>novelty</b>.</p>
+  <p>Note that submissions on privacy would be best submitted to the <a href="https://nips.cc/Conferences/2018/Schedule?showEvent=10934" target="_blank">workshop dedicated to this topic</a>.</p>
+  <p>This workshop will not have proceedings.</p>
+  <p>Contact trustworthyiclr20@googlegroups.com for any questions.</p>
+
+-->
+
+<h2>Program Committee</h2>
+
+TBA
+
+<!--
+<ul>
+  <li>NAME (AFFILIATION)</li>
+</ul>
+-->
+
+</main>
+
+
+
+</body></html>
